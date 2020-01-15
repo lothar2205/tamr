@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3c10365e-6889-4221-ab14-09680432032b" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1VidXAsfwZTPHF0zE1olOS8coN9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="joinSourceEnrich" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="env" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/joinSourceEnrich.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.joinSourceEnrich" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3c10365e-6889-4221-ab14-09680432032b" name="Default Changelist" comment="" />
+      <created>1577739886053</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1577739886053</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1255" height="196" key="GridCell.Tab.0.bottom" timestamp="1578087616375">
+      <screen x="0" y="23" width="1440" height="814" />
+    </state>
+    <state width="1255" height="196" key="GridCell.Tab.0.bottom/0.23.1440.814@0.23.1440.814" timestamp="1578087616375" />
+    <state width="1137" height="224" key="GridCell.Tab.0.bottom/0.23.1440.816@0.23.1440.816" timestamp="1578079120640" />
+    <state width="1379" height="196" key="GridCell.Tab.0.bottom/0.23.1440.822@0.23.1440.822" timestamp="1577997074736" />
+    <state width="1255" height="196" key="GridCell.Tab.0.center" timestamp="1578087616374">
+      <screen x="0" y="23" width="1440" height="814" />
+    </state>
+    <state width="1255" height="196" key="GridCell.Tab.0.center/0.23.1440.814@0.23.1440.814" timestamp="1578087616374" />
+    <state width="1137" height="224" key="GridCell.Tab.0.center/0.23.1440.816@0.23.1440.816" timestamp="1578079120639" />
+    <state width="1379" height="196" key="GridCell.Tab.0.center/0.23.1440.822@0.23.1440.822" timestamp="1577997074736" />
+    <state width="1255" height="196" key="GridCell.Tab.0.left" timestamp="1578087616374">
+      <screen x="0" y="23" width="1440" height="814" />
+    </state>
+    <state width="1255" height="196" key="GridCell.Tab.0.left/0.23.1440.814@0.23.1440.814" timestamp="1578087616374" />
+    <state width="1137" height="224" key="GridCell.Tab.0.left/0.23.1440.816@0.23.1440.816" timestamp="1578079120639" />
+    <state width="1379" height="196" key="GridCell.Tab.0.left/0.23.1440.822@0.23.1440.822" timestamp="1577997074735" />
+    <state width="1255" height="196" key="GridCell.Tab.0.right" timestamp="1578087616375">
+      <screen x="0" y="23" width="1440" height="814" />
+    </state>
+    <state width="1255" height="196" key="GridCell.Tab.0.right/0.23.1440.814@0.23.1440.814" timestamp="1578087616375" />
+    <state width="1137" height="224" key="GridCell.Tab.0.right/0.23.1440.816@0.23.1440.816" timestamp="1578079120640" />
+    <state width="1379" height="196" key="GridCell.Tab.0.right/0.23.1440.822@0.23.1440.822" timestamp="1577997074736" />
+    <state width="1137" height="224" key="GridCell.Tab.1.bottom" timestamp="1578080958879">
+      <screen x="0" y="23" width="1440" height="814" />
+    </state>
+    <state width="1137" height="224" key="GridCell.Tab.1.bottom/0.23.1440.814@0.23.1440.814" timestamp="1578080958879" />
+    <state width="1379" height="244" key="GridCell.Tab.1.bottom/0.23.1440.816@0.23.1440.816" timestamp="1578079120542" />
+    <state width="1379" height="244" key="GridCell.Tab.1.bottom/0.23.1440.822@0.23.1440.822" timestamp="1577987677533" />
+    <state width="1137" height="224" key="GridCell.Tab.1.center" timestamp="1578080958878">
+      <screen x="0" y="23" width="1440" height="814" />
+    </state>
+    <state width="1137" height="224" key="GridCell.Tab.1.center/0.23.1440.814@0.23.1440.814" timestamp="1578080958878" />
+    <state width="1379" height="244" key="GridCell.Tab.1.center/0.23.1440.816@0.23.1440.816" timestamp="1578079120541" />
+    <state width="1379" height="244" key="GridCell.Tab.1.center/0.23.1440.822@0.23.1440.822" timestamp="1577987677532" />
+    <state width="1137" height="224" key="GridCell.Tab.1.left" timestamp="1578080958878">
+      <screen x="0" y="23" width="1440" height="814" />
+    </state>
+    <state width="1137" height="224" key="GridCell.Tab.1.left/0.23.1440.814@0.23.1440.814" timestamp="1578080958878" />
+    <state width="1379" height="244" key="GridCell.Tab.1.left/0.23.1440.816@0.23.1440.816" timestamp="1578079120541" />
+    <state width="1379" height="244" key="GridCell.Tab.1.left/0.23.1440.822@0.23.1440.822" timestamp="1577987677531" />
+    <state width="1137" height="224" key="GridCell.Tab.1.right" timestamp="1578080958879">
+      <screen x="0" y="23" width="1440" height="814" />
+    </state>
+    <state width="1137" height="224" key="GridCell.Tab.1.right/0.23.1440.814@0.23.1440.814" timestamp="1578080958879" />
+    <state width="1379" height="244" key="GridCell.Tab.1.right/0.23.1440.816@0.23.1440.816" timestamp="1578079120541" />
+    <state width="1379" height="244" key="GridCell.Tab.1.right/0.23.1440.822@0.23.1440.822" timestamp="1577987677532" />
+    <state x="372" y="221" key="com.intellij.ide.util.TipDialog" timestamp="1578420808170">
+      <screen x="0" y="23" width="1440" height="816" />
+    </state>
+    <state x="372" y="221" key="com.intellij.ide.util.TipDialog/0.23.1440.816/-1920.23.1920.1057@0.23.1440.816" timestamp="1578420808170" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
