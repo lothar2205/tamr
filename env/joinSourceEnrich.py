@@ -15,42 +15,46 @@ def remove_lists(record):
         record[key] = np.nan
   return record
 
+
 creds = yaml.full_load_all("credentials.yaml")
 # replace with your credentials.yaml path
 auth = UsernamePasswordAuth('admin', 'dt')
 host = '10.20.255.167' # replace with your Tamr host
-
 tamr = Client(auth, host=host)
+console_print=0
 
-for dataset in tamr.datasets:
-  print(dataset.name)
-print("Dataset names printed successfully")
+if console_print:
+  for dataset in tamr.datasets:
+    print(dataset.name)
+    print("Dataset names printed successfully")
 
 src_dt_name="customer_000005_20191119.csv"
 enrich_dt_name="customer_000005_191119_enrich"
 
-#df = pd.DataFrame((tamr.datasets.by_name("customer_000005_20191119.csv")))
-
+print("Pulling the datasets "+src_dt_name+" and "+enrich_dt_name)
 datasets = DatasetCollection(tamr) #get dataset collections object
 src_dataset = datasets.by_name(src_dt_name) #get the source dataset object by the name
 enrich_dataset = datasets.by_name(enrich_dt_name) #get the enrich source dataset object by the name
 
+#converting record field values in strings
 src_records = [remove_lists(rec) for rec in src_dataset.records()]
 enrich_records = [remove_lists(rec) for rec in enrich_dataset.records()]
 
+#passing the records to a DataFrame
 df_src=pd.DataFrame(src_records)
 df_enrich=pd.DataFrame(enrich_records)
 
+print("merging the enrich fields with source dataset")
+#doing a left join between the source dataset and the enrich dataset
 df_merged_left = pd.merge(left=df_src, right=df_enrich, how='left', left_on='name', right_on='original_company_name')
 
-
-print('Number of colums in Dataframe : ', len(df_merged_left.columns))
-print('Number of rows in Dataframe : ', len(df_merged_left.index))
-pd.set_option('display.max_rows', 10)
-pd.set_option('display.max_columns', None)
-pd.set_option('display.width', None)
-
-print(df_merged_left)
+if console_print:
+  print('Number of colums in Dataframe : ', len(df_merged_left.columns))
+  print('Number of rows in Dataframe : ', len(df_merged_left.index))
+  pd.set_option('display.max_rows', 10)
+  pd.set_option('display.max_columns', None)
+  pd.set_option('display.width', None)
+  print(df_merged_left)
 
 df_merged_left = df_merged_left.sort_values(by='id')
 list(df_merged_left)
@@ -83,13 +87,15 @@ df_merged_left = df_merged_left[
       'bing_domain_name_primary_10'
     ]]
 
-print(df_merged_left)
+if console_print:
+  print(df_merged_left)
+  df_merged_left.to_csv(src_dt_name.replace('.csv', '') + 'plus_enrichFields.csv', encoding ='utf-8', index= False)
 
-df_merged_left.to_csv(src_dt_name.replace('csv', '') + 'plus_enrichFields.csv', encoding ='utf-8', index= False)
+print("Uploading source dataset with enrich bing fields to the Dataset Catalog")
+dataset_result = tamr.datasets.create_from_dataframe(df_merged_left, "id", src_dt_name.replace('.csv', '')+'_enrichFields')
 
-dataset_result = tamr.datasets.create_from_dataframe(df_merged_left, "id", src_dt_name.replace('.csv', '')+'enrichFields')
-
-for rec in dataset_result.records():
-  print(rec)
+if console_print:
+  for rec in dataset_result.records():
+    print(rec)
 
 
